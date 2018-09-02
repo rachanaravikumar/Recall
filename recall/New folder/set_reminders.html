@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .screen {
+   margin:0 auto; /* this will center the page */
+   background-color:#BCC6CC; 
+  width:300px;
+    }
+    h2{
+        font-family: gabriola;
+        font-size:30px;
+    }
+    h4{
+        font-family: gabriola;
+        font-size:25px;
+    }
+    form{
+        font-size:20px;
+    }
+    .size{
+        font-size:15px; 
+    }
+        </style>
+        <title>Set a Reminder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="screen" align="center">
+            <h2 align="center">Set a Reminder:</h2>
+            <form action="display.html">
+                <h4 align="center">Type:</h4>
+                <label><input type="checkbox" name="reminder"> Medication</label>
+                <label><input type="checkbox" name="reminder"> Contact</label>
+                <label><input type="checkbox" name="reminder"> Other</label><br><br>
+                 <h4 align="center">Time:</h4>
+                 <label><input type="text" placeholder="Enter time" required><br>
+                <button type="submit" class="size">Submit</button>
+            </form>
+        </div>  
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<html>
+   
+ <head>
+   
+     <style>
+   
+ .screen {
+ 
+  margin:0 auto; /* this will center the page */
+  
+ background-color:#728FCE; 
+  
+width:300px;
+ 
+   }
+ 
+   br {
+  content: " ";
+
+  display: block;
+
+  margin: 10px;
+
+}
+   
+ h2{
+   
+     font-family: gabriola;
+     
+   font-size:40px;
+  
+  }
+  
+  h4{
+   
+     font-family: gabriola;
+ 
+       font-size:20px;
+  
+  }
+
+ul {
+   
+ list-style-type: none;
+ 
+   margin: 0;
+   
+ padding: 0;
+    
+width: 200px;
+   
+ background-color: #f1f1f1;
+
+}
+
+
+li a {
+   
+ display: block;
+ 
+   color: #000;
+ 
+   padding: 20px 40px;
+   
+ text-decoration: none;
+   
+ font-size: 20px;
+}
+
+
+/* Change the link color on hover */
+
+li a:hover {
+ 
+   background-color: #6495ED;
+ 
+   color: white;
+
+}
+   
+ </style>
+
+<title>Contacts</title>
+     
+   <meta charset="UTF-8">
+   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+  <script LANGUAGE="JavaScript" type="text/javascript">
+
+function display()
+ {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+  
+  message += "<li><b>PHONE: </b>" + document.form1.phone.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+  
+ 
+  </head>
+  
+   <body>
+   
+     <div class="screen" align="center"> 
+
+        <h2 align="center" class="screen"> Contacts</h2> 
+          
+<form name="form1">
+
+<p>
+<b>Name:</b>
+ <input TYPE="TEXT" SIZE="20" NAME="yourname">
+
+</p>
+
+
+<p>
+<b>Phone: </b>
+ <input TYPE="TEXT" SIZE="15" NAME="phone">
+
+</p>
+
+<p>
+<input TYPE="BUTTON" VALUE="Display contacts" onClick="display();">
+</p>
+
+ <ul>
+  
+               <li><a href="recall.html">Back</a></li>
+                
+         
+   </ul>
+
+</form> 
+
+      <h4 align="center"> An app that helps you RECALL!</h4>
+    
+</div>
+
+</body>
+
+</html>
